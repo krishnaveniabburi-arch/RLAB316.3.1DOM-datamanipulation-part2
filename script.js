@@ -51,11 +51,11 @@ subMenuEL.classList.add("flex-around");
 subMenuEL.style.position = 'absolute';
 
 // Set the CSS top property of subMenuEl to the value of 0
+
 subMenuEL.style.top = '0';
 
-
-
 // part--4 Adding menu interaction (buttons)
+
 var menuLinks = [
 
   { text: 'about', href: '/about' },
@@ -216,7 +216,7 @@ subMenuEL.addEventListener('click', function (event) {
 
   // check the clicked element is an <a> tag other wise return
 
-  if (event.target.tagName !== 'a')
+  if (event.target.tagName !== 'A')
     return;
   // Log the content of the <a> to verify the handler is working
 
@@ -240,6 +240,4 @@ subMenuEL.addEventListener('click', function (event) {
 
 // The ABOUT link is clicked, an <h1>About</h1> should be displayed
 
-if (event.target.textContent.toLowercase() === 'about') {
-  mainEL.innerHTML = '<h1>About</h1>';
-}
+
